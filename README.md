@@ -21,32 +21,31 @@ An automated, modern, and minimal course material downloader for **CyberWarfare 
 - 🛡️ **Bypass Restrictions**: Handles "embed-only" Vimeo videos via custom headers and referrers.
 - 📁 **Organized Storage**: Automatically categorizes files by Course and Module.
 
-Ensure you have Python 3.10+ installed and the following dependencies:
-
-```bash
-pip install -r requirements.txt
-```
-
-### 📦 System Dependencies (Required)
-
-`ffmpeg` is required for merging high-quality video and audio streams. If you don't have it, install it using:
-
-- **Linux (Parrot/Ubuntu/Debian)**: `sudo apt update && sudo apt install ffmpeg`
-- **macOS**: `brew install ffmpeg`
-- **Windows**: Download from [ffmpeg.org](https://ffmpeg.org/download.html) and add the `bin` folder to your System PATH.
-
 ## 🚀 Getting Started
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/g4rxd/CWL-DL.git
-   cd CWL-DL
-   ```
+### 1. Installation
 
-2. **Run the script**:
-   ```bash
-   python3 cwl_downloader.py
-   ```
+You can install the package directly from PyPI:
+
+```bash
+pip install cwl-dl
+```
+
+Alternatively, to install from source:
+
+```bash
+git clone https://github.com/4nuxd/cwl-dl.git
+cd cwl-dl
+pip install .
+```
+
+### 2. Usage
+
+Once installed, simply run the tool from your terminal:
+
+```bash
+cwl-dl
+```
 
 3. **Login**:
    The script will prompt for your **JWT Token**.

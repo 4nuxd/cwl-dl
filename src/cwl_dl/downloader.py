@@ -596,7 +596,7 @@ def main():
                 print("  This will remove your saved authentication token.\n")
                 confirm = input("\033[1;36m>> Continue? (y/n): \033[0m").strip().lower()
                 if confirm == 'y':
-                    auth.remove_saved_token()
+                    auth.logout()
                     print("\n\033[1;32m✓ Successfully logged out\033[0m")
                     break
                 else:

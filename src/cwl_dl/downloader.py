@@ -6,16 +6,8 @@ from pathlib import Path
 from typing import Dict, List, Optional
 import time
 import getpass
-try:
-    from cwl_auth import CWLAuth
-except ImportError:
-    print("[!] Error: cwl_auth.py not found in the same directory")
-    sys.exit(1)
-try:
-    import yt_dlp
-except ImportError:
-    print("[!] Error: yt-dlp not installed. Run: pip install yt-dlp")
-    sys.exit(1)
+from .auth import CWLAuth
+import yt_dlp
 
 class CWLDownloader:
     BASE_URL = "https://labs.cyberwarfare.live"

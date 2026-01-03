@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cwl-dl"
+version = "1.0.0"
+authors = [
+  { name="4nuxd", email="blionrie@gmail.com" },
+]
+description = "Automated course material downloader for CyberWarfare Labs"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "requests",
+    "yt-dlp",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/4nuxd/cwl-dl"
+"Bug Tracker" = "https://github.com/4nuxd/cwl-dl/issues"
+"Repository" = "https://github.com/4nuxd/cwl-dl"
+
+[project.scripts]
+cwl-dl = "cwl_dl.downloader:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
